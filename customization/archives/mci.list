@@ -1,0 +1,2 @@
+deb http://mobile.neon.pangea.pub @DISTRIBUTION@ main
+deb-src http://mobile.neon.pangea.pub @DISTRIBUTION@ main
