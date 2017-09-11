@@ -6,7 +6,6 @@ wget
 qml-module-qtlocation
 qml-module-qtpositioning
 gstreamer1.0-plugins-ugly
-openssh-server
 pulseaudio-module-droid
 libqt5multimedia5-plugins
 libkf5wallet-bin
