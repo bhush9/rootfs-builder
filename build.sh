@@ -12,8 +12,6 @@ lb config \
         --archive-areas "main restricted universe multiverse" \
         --apt-source-archives true \
         --architectures armhf \
-        --bootstrap-qemu-arch armhf \
-        --bootstrap-qemu-static /usr/bin/qemu-arm-static \
         --linux-flavours none \
         --bootloader none \
         --initramfs-compression lzma \
