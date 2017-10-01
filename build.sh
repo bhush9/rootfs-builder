@@ -44,5 +44,6 @@ lb build
 # so we pass --binary-images none to lb config and create tarball on our own
 if [ -e "binary/boot/filesystem.dir" ]; then
         (cd "binary/boot/filesystem.dir/" && tar -c *) | gzip -9 --rsyncable > "halium-rootfs-$1.tar.gz"
+        ls -lah
         chmod 644 "halium.rootfs-$1.tar.gz"
 fi
