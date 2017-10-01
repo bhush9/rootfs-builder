@@ -1,4 +1,4 @@
 deb http://mobile.neon.pangea.pub @DISTRIBUTION@ main
 deb-src http://mobile.neon.pangea.pub @DISTRIBUTION@ main
-deb http://mobile.neon.pangea.pub/generic @DISTRIBUTION@ main
-deb-src http://mobile.neon.pangea.pub/generic @DISTRIBUTION@ main
+deb http://mobile.neon.pangea.pub/VARIANT @DISTRIBUTION@ main
+deb-src http://mobile.neon.pangea.pub/VARIANT @DISTRIBUTION@ main

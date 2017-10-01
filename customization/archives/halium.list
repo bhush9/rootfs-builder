@@ -1,4 +1,4 @@
 deb http://repo.halium.org @DISTRIBUTION@ main
 deb-src http://repo.halium.org @DISTRIBUTION@ main
-deb http://repo.halium.org/generic @DISTRIBUTION@ main
-deb-src http://repo.halium.org/generic @DISTRIBUTION@ main
+deb http://repo.halium.org/VARIANT @DISTRIBUTION@ main
+deb-src http://repo.halium.org/VARIANT @DISTRIBUTION@ main

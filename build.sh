@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ "$#" -ne 1 ]; then
+    echo "At least one argument needed, caf or generic"
+    exit 1
+fi
+
 export ARCH=armhf
 
 # configure the live-build
@@ -26,6 +31,9 @@ lb config \
         --apt-recommends false \
         --initramfs=none
 
+# make caf or generic
+sed -i s/VARIANT/$i customization/archives/*.list
+
 # Copy the customization
 cp -rf customization/* config/
 
@@ -35,6 +43,6 @@ lb build
 # live-build itself is meh, it creates the tarball with directory structure of binary/boot/filesystem.dir
 # so we pass --binary-images none to lb config and create tarball on our own
 if [ -e "binary/boot/filesystem.dir" ]; then
-        (cd "binary/boot/filesystem.dir/" && tar -c *) | gzip -9 --rsyncable > "halium.rootfs.tar.gz"
-        chmod 644 "halium.rootfs.tar.gz"
+        (cd "binary/boot/filesystem.dir/" && tar -c *) | gzip -9 --rsyncable > "halium-rootfs-$1.tar.gz"
+        chmod 644 "halium.rootfs-$1.tar.gz"
 fi
