@@ -32,7 +32,7 @@ lb config \
         --initramfs=none
 
 # make caf or generic
-sed -i s/VARIANT/$i customization/archives/*.list
+sed -i s/VARIANT/$i/g customization/archives/*.list
 
 # Copy the customization
 cp -rf customization/* config/
