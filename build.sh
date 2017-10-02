@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -ex
+
 if [ "$#" -ne 1 ]; then
     echo "At least one argument needed, caf or generic"
     exit 1
