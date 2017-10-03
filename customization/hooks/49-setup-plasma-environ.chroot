@@ -6,7 +6,6 @@ echo QT_QPA_PLATFORM=wayland >> /etc/environment
 echo FORCE_RIL_NUM_MODEMS=1 >> /etc/environment
 sed s,QT_IM_MODULE.*,, /etc/environment -i
 sed s,GTK_IM_MODULE.*,, /etc/environment -i
-echo QT_IM_MODULE=maliit >> /etc/environment
 echo GTK_IM_MODULE=maliit >> /etc/environment
 
 sed s,PATH.*,, /etc/environment -i
