@@ -3,6 +3,7 @@ plasma-phone
 mtp-server
 upower
 wget
+phonon4qt5-backend-vlc-
 qml-module-qtlocation
 qml-module-qtpositioning
 gstreamer1.0-plugins-ugly
