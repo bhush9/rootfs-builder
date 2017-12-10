@@ -6,6 +6,7 @@ wget
 phonon4qt5-backend-vlc-
 qml-module-qtlocation
 qml-module-qtpositioning
+qtvirtualkeyboard-plugin
 gstreamer1.0-plugins-ugly
 pulseaudio-module-droid
 libqt5multimedia5-plugins
