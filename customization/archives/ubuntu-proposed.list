@@ -1,2 +1,0 @@
-deb http://ports.ubuntu.com/  @DISTRIBUTION@-proposed @ARCHIVE_AREAS@
-deb-src http://ports.ubuntu.com/  @DISTRIBUTION@-proposed @ARCHIVE_AREAS@
