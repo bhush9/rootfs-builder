@@ -1,3 +1,4 @@
+audacious
 packagekit
 plasma-phone
 mtp-server
@@ -20,3 +21,7 @@ chromium-browser
 language-pack-en-base
 kmahjongg
 dolphin
+ubuntu-restricted-extras
+gstreamer1.0-plugins-bad
+gstreamer1.0-libav
+libavcodec-extra
