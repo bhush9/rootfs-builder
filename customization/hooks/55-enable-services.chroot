@@ -9,4 +9,6 @@ systemctl enable dropbear
 
 systemctl enable lxc@android.service
 
+systemctl enable timekeep.service
+
 systemctl set-default graphical.target
