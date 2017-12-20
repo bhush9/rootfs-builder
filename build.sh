@@ -23,6 +23,7 @@ lb config \
         --bootloader none \
         --initramfs-compression lzma \
         --initsystem none \
+        --bootappend-live hostname=ubuntu-phablet \
         --chroot-filesystem plain \
         --apt-options "--yes -o Debug::pkgProblemResolver=true" \
         --compression gzip \
