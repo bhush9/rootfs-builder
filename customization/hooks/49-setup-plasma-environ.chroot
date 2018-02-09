@@ -12,3 +12,4 @@ sed s,PATH.*,, /etc/environment -i
 echo PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games >> /etc/environment
 
 echo GDK_BACKEND=x11 >> /etc/environment
+echo QT_GSTREAMER_CAMERABIN_SRC=droidcamsrc >> /etc/environment
