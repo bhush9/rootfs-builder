@@ -25,3 +25,6 @@ ubuntu-restricted-extras
 gstreamer1.0-plugins-bad
 gstreamer1.0-libav
 libavcodec-extra
+gstreamer1.0-omx
+gstreamer1.0-droid-tools
+nemo-qtmultimedia-plugins
