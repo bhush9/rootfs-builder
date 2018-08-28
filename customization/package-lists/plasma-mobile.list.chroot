@@ -13,7 +13,7 @@ libkf5wallet-bin
 ca-certificates
 telepathy-mission-control-5
 ntp
-qtdeclarative5-ofono0.2
+qml-module-ofono
 language-pack-en-base
 ubuntu-restricted-extras
 gstreamer1.0-plugins-bad
