@@ -12,7 +12,7 @@ export ARCH=armhf
 # configure the live-build
 lb config \
         --mode ubuntu \
-        --distribution xenial \
+        --distribution $DIST \
         --binary-images none \
         --memtest none \
         --source false \
@@ -23,7 +23,6 @@ lb config \
         --bootloader none \
         --initramfs-compression lzma \
         --initsystem none \
-        --bootappend-live hostname=ubuntu-phablet \
         --chroot-filesystem plain \
         --apt-options "--yes -o Debug::pkgProblemResolver=true" \
         --compression gzip \
@@ -34,11 +33,40 @@ lb config \
         --apt-recommends false \
         --initramfs=none
 
+. /etc/os-release # to get access to version_codename; NB: of host container!
+
+GPG="gpg"
+ARGS=""
+if [ "$VERSION_CODENAME" = "bionic" ]; then
+  apt install -y dirmngr gnupg1
+  ARGS="--batch --verbose"
+  GPG="gpg1"
+fi
+
 # make caf or generic
 sed -i "s/VARIANT/$1/g" customization/archives/*.list
 
 # Copy the customization
 cp -rf customization/* config/
+
+rm config/archives/*.key
+
+$GPG --list-keys
+$GPG \
+  $ARGS \
+  --no-default-keyring \
+  --primary-keyring config/archives/mobile-packages.key \
+  --keyserver pool.sks-keyservers.net \
+  --recv-keys 'E47F 5011 FA60 FC1D EBB1  9989 3305 6FA1 4AD3 A421'
+
+$GPG \
+  $ARGS \
+  --no-default-keyring \
+  --primary-keyring config/archives/mobile-packages.key \
+  --keyserver pool.sks-keyservers.net \
+  --recv-keys '444D ABCF 3667 D028 3F89  4EDD E6D4 7362 5575 1E5D'
+
+chmod 644 config/archives/mobile-packages.key
 
 # build the rootfs
 lb build
