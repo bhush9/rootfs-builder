@@ -1,7 +1,5 @@
-audacious
 packagekit
 plasma-phone
-mtp-server
 upower
 wget
 phonon4qt5-backend-vlc-
@@ -16,14 +14,8 @@ ca-certificates
 telepathy-mission-control-5
 ntp
 qtdeclarative5-ofono0.2
-gnome-chess
-chromium-browser
 language-pack-en-base
-kmahjongg
-dolphin
 ubuntu-restricted-extras
 gstreamer1.0-plugins-bad
 gstreamer1.0-libav
 libavcodec-extra
-gstreamer1.0-omx
-gstreamer1.0-droid-tools
