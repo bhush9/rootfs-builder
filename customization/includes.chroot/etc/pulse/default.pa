@@ -50,8 +50,8 @@ load-module module-switch-on-port-available
 #load-module module-null-sink
 #load-module module-pipe-sink
 
-.ifexists module-droid-card-22.so
-load-module module-droid-card-22
+.ifexists module-droid-card.so
+load-module module-droid-card
 .endif
 
 ### Automatically load driver modules depending on the hardware available
