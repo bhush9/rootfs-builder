@@ -18,4 +18,7 @@ language-pack-en-base
 ubuntu-restricted-extras
 gstreamer1.0-plugins-bad
 gstreamer1.0-libav
+gstreamer1.0-omx
+gstreamer1.0-droid-tools
+nemo-qtmultimedia-plugins
 libavcodec-extra
