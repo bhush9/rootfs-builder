@@ -22,3 +22,6 @@ gstreamer1.0-omx
 gstreamer1.0-droid-tools
 nemo-qtmultimedia-plugins
 libavcodec-extra
+flatpak
+flatpak-extension-libhybris
+xdg-desktop-portal-kde
