@@ -1,5 +1,6 @@
 android-tools-adbd
 gdb
+hybris-usb
 libc6-dbg
 libhybris-test
 lxc1
@@ -9,4 +10,4 @@ ofono
 ofono-scripts
 strace
 vim
-hybris-usb
+urfkill
